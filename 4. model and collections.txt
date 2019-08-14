@@ -1,0 +1,16 @@
+schema tells the model hyy I expect these type of properties.
+
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
+// Create Schema and Model
+
+const MaroCharSchema = new Schema({
+ 
+   name: String;
+   weight: Number;
+});
+
+const MarioChar = mongoose.model('mariochar', MarioCharSchema);
+
+module.exports = MarioChar;
